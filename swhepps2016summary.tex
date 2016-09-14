@@ -1,4 +1,4 @@
-\documentclass[10pt,a4paper,draft]{article}
+\documentclass[10pt,a4paper]{article}
 \PassOptionsToPackage{hyphens}{url}\usepackage{hyperref} 
 \usepackage{draftcopy,epsfig,epsf,
 ,times,mathptm,graphicx,color,fancyhdr,
@@ -68,18 +68,26 @@ layout,amssymb,xspace,setspace,amsmath,printlen}
 Summary of the\\
  Strategic Workshop for High Energy Particle Physics \\
   in Switzerland }\\
+\vspace{2cm}
+
+ \includegraphics[width=0.5\textwidth]{figures/GroupPicture.png}
+ 
 \vspace{6cm}
 
-%High $p_T$ Physics with CMS and Upgrades of the CMS Barrel Pixel Detector}\\
-\url{https://indico.cern.ch/event/504502/}  ~\\
 Seminarhotel Aegerisee, 7-9 June 2016 \\
+\url{https://indico.cern.ch/event/504502/}  ~\\
 \  ~\\
+
+
+\vspace {-0.5cm}
+ \begin{figure}[h]
+   \centering
+   \includegraphics[width=0.1\textwidth]{figures/CHIPPlogo.png}
+ \end{figure}
+
 \vspace{-0.4cm}
 \today \\
 \end{center}
-
-
-
 \end{document}
 \newpage 
 
@@ -88,63 +96,22 @@ Seminarhotel Aegerisee, 7-9 June 2016 \\
 %  Overview
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{1Oberview}
+\include{1Overview}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% 2.1  CURRENT STATE OF RESEARCH IN THE FIELD 
+%  Summary 
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{2.1CurrentState} %%% - switch to \input in the last iteration
-%\include{2.1CurrentState}
-%\end{document}
-%%%%%%%%%%%%%%%%%
-%
-% 2.2 OWN RESEARCH
-%
-%%%%%%%%%%%%%%%%%
-\input{2.2OwnResearch} 
-%\include{2.2OwnResearch} 
-%\end{document}
-%%%%%%%%%%%%%%%%%
-%
-% 2.3 DETAILED RESEARCH PLAN 
-%
-%%%%%%%%%%%%%%%%%
-%\newpage
+\include{1Overview}
 
-\input{2.3DetailedPlan} 
-%\include{2.3DetailedPlan} 
 
-%%%%%%%%%%%%%%%%%
-%
-% 2.4  SCHEDULE AND MILESTONES 
-%
-%%%%%%%%%%%%%%%%%
-\input{2.4ScheduleMilestones}
-%\include{2.4ScheduleMilestones}
 
-%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% 2.5 RELEVANCE AND IMPACT
+%Bibliography 									
 %
-%%%%%%%%%%%%%%%%%
-
-\input{2.5RelevanceImpact}
-%\include{2.5RelevanceImpact}
-
-%%%%%%%%%%%%%%%%%
-%
-% BIBLIOGRAPHY
-%
-%%%%%%%%%%%%%%%%%
-
-%\section{References}
-
-%\vspace{-\baselineskip}
-%\vspace{-\baselineskip}
-%\end{document}
-%\include{bibliography}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{bibliography}
 
 
