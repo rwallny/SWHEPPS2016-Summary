@@ -1,5 +1,5 @@
 #! /bin/bash
-pur
+
 rm *.dvi
 rm *.aux
 rm *.toc
