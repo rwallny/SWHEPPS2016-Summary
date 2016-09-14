@@ -1,0 +1,154 @@
+\documentclass[10pt,a4paper,draft]{article}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref} 
+\usepackage{draftcopy,epsfig,epsf,
+,times,mathptm,graphicx,color,fancyhdr,
+layout,amssymb,xspace,setspace,amsmath,printlen}
+\usepackage[compact]{titlesec}
+\usepackage{rotating}
+\usepackage[a4paper, right=2cm,left=2cm]{geometry}
+%\providecommand{\href}[2]{#2}   
+
+\onehalfspacing
+%\singlespacing
+
+%%% setup format 
+\renewcommand{\topfraction}{0.9}	% max fraction of floats at top
+\renewcommand{\bottomfraction}{0.8}	% max fraction of floats at bottom
+\renewcommand{\floatpagefraction}{0.7}	% require fuller float pages
+\renewcommand{\dblfloatpagefraction}{0.7}	% require fuller float pages
+
+
+
+%\setlength{\topmargin}{-2.3cm}
+%\setlength{\oddsidemargin}{0cm}
+%\setlength{\marginparsep}{0pt}
+%\setlength{\marginparwidth}{62pt}
+
+%\textwidth=17.0cm
+%\textheight=24.7cm
+%%%%%
+%\uselengthunit{mm}
+ \message{The text height is \the\textheight} 
+ \message{The text width  is \the\textwidth}
+
+ \message{The paper  height is \the\paperheight} 
+ \message{The paper  width  is \the\paperwidth} 
+
+\newlength{\foo}
+\setlength{\foo}{12pt}
+\uselengthunit{mm}
+\typeout  {\printlength{\foo}}
+
+%\typeout{The paper  width  is \printlength{\paperwidth}}
+
+\pdfpagewidth=\paperwidth
+\pdfpageheight=\paperheight
+
+\include{newcommands}
+%\pagestyle{headings}
+
+
+%\includeonly{1Summary}
+%\includeonly{2.1CurrentState}
+%\includeonly{2.2OwnResearch} 
+%\includeonly{2.3DetailedPlan} 
+%\includeonly{2.3DetailedPlan,2.4ScheduleMilestones,2.5RelevanceImpact,bibliography} 
+%\includeonly{2.4ScheduleMilestones,2.5RelevanceImpact}
+%\includeonly{2.5RelevanceImpact}
+%\input{bibliography} 
+
+\begin{document}
+%\Addtocounter{page}{-1}
+\pagestyle{plain}
+%\layout                                                                            
+%bla     
+\begin{center}
+{\large {\bf  SWHEPPS 2016:}\\
+\ ~\\
+Summary of the\\
+ Strategic Workshop for High Energy Particle Physics \\
+  in Switzerland }\\
+\vspace{6cm}
+
+%High $p_T$ Physics with CMS and Upgrades of the CMS Barrel Pixel Detector}\\
+\url{https://indico.cern.ch/event/504502/}  ~\\
+Seminarhotel Aegerisee, 7-9 June 2016 \\
+\  ~\\
+\vspace{-0.4cm}
+\today \\
+\end{center}
+
+
+
+\end{document}
+\newpage 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  Overview
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{1Oberview}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% 2.1  CURRENT STATE OF RESEARCH IN THE FIELD 
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{2.1CurrentState} %%% - switch to \input in the last iteration
+%\include{2.1CurrentState}
+%\end{document}
+%%%%%%%%%%%%%%%%%
+%
+% 2.2 OWN RESEARCH
+%
+%%%%%%%%%%%%%%%%%
+\input{2.2OwnResearch} 
+%\include{2.2OwnResearch} 
+%\end{document}
+%%%%%%%%%%%%%%%%%
+%
+% 2.3 DETAILED RESEARCH PLAN 
+%
+%%%%%%%%%%%%%%%%%
+%\newpage
+
+\input{2.3DetailedPlan} 
+%\include{2.3DetailedPlan} 
+
+%%%%%%%%%%%%%%%%%
+%
+% 2.4  SCHEDULE AND MILESTONES 
+%
+%%%%%%%%%%%%%%%%%
+\input{2.4ScheduleMilestones}
+%\include{2.4ScheduleMilestones}
+
+%%%%%%%%%%%%%%%%%
+%
+% 2.5 RELEVANCE AND IMPACT
+%
+%%%%%%%%%%%%%%%%%
+
+\input{2.5RelevanceImpact}
+%\include{2.5RelevanceImpact}
+
+%%%%%%%%%%%%%%%%%
+%
+% BIBLIOGRAPHY
+%
+%%%%%%%%%%%%%%%%%
+
+%\section{References}
+
+%\vspace{-\baselineskip}
+%\vspace{-\baselineskip}
+%\end{document}
+%\include{bibliography}
+\input{bibliography}
+
+
+
+
+
+\end{document}
