@@ -2,6 +2,35 @@
 
 \fix{Editors: Roland, Sergio}
 
+The Detector Technology session aimed at discussing not only the current detector developments in the short-term but also at giving a prospective look to what the trend may be for future directions in detector R\&D. The session was organized in five talks. General overview talks on new detector concepts and recent technological developments were given by Didier Contardo (IPN Lyon) and Philip Patrick Allport (University of Birmingham). Then, more specific talks covering major detector sub-systems as Trackers, Calorimeters and Trigger/DAQ were presented respectively by Mark Tobin (EPFL), David Barney (CERN) and Niklaus Berger (JGU Mainz). Naturally, in all cases more emphasis was given to the intensive R\&D being performed for the various detector upgrades for the High-Luminosity LHC (HL-LHC). However, it was also noticed, and appreciated, the effort made by the speakers to provide some figures of merit for the next generation of detectors for long-term future accelerators, notably for electron-positron (ee) linear colliders (ILC, CLIC) and circular hadron-hadron (hh) colliders (FCC). We just include below in a non-exhaustive way some selected topics presented during the session. The reader may refer to the different talks for further details.\\ 
 
+The various LHC experiments will be upgraded to operate at the HL-LHC scheduled to start delivering collisions around 2025. New tracking detectors, improvements in the calorimeters and new readout systems are foreseen for ATLAS, CMS and LHCb. 
 
+\begin{itemize}
+
+\item Both ATLAS and CMS will install new all-silicon trackers with pixel sensors in the innermost layers and microstrip detectors at outer radii. LHCb will install a new pixel vertex detector and a scintillating fibre tracker with SiPM readout. For the pixel detectors of ATLAS and CMS, where radiation hardness, high granularity and low material budget are mandatory, n-in-p thin planar (with different isolation techniques) and 3D sensors are well-established technologies being tested up to very high fluencies ($\sim 10^{16}\,\unit{n_{eq}/cm^2}$). In addition, many developments are being performed on detectors with increasing integration of the sensor and readout electronics ({\em e.g.} MAPS detectors are planned for both the ALICE upgrade and for the Mu3e tracker).
+
+\item Deep-submicron has been widely adopted for new readout chips, typically both 130 and 65 nm (CERN RD53 project) CMOS technologies, with pixel sizes down to $50 \times 50~\si{\micro m\squared}$. Special attention has to be paid though to total ionizing dose (TID) and short and narrow channel radiation-induced (RINCE, RISCE) effects.
+
+\item Both ATLAS and CMS experiments will increase their calorimetric hardware trigger granularity by upgrading both on- and off-detector readout electronics. CMS will install new high-granularity endcap calorimeters. “Particle Flow” starts to be widely adopted as main algorithm for jet reconstruction. This technique combines information from all sub-detectors to improve the jet measurement and mainly use the hadron calorimeter (having the worst energy resolution and hence limiting the jet performance) for neutral hadron reconstruction.
+
+\item Concerning the trigger scheme, while LHCb plans already to read the complete detector every 25 ns with an output data rate of 30 Tbps (Phase-1 upgrade in 2019), ATLAS and CMS are targeting for the HL-LHC rates of $\sim$1 MHz with the inclusion of the tracking information in the first trigger-level decision logic. CMS will install double-sided silicon ``\pt-modules'' to create stubs at the module level to identify high-\pt\ tracks; ATLAS plans to make use of large associative memories to perform track matching to stored patterns in banks. For data transmission new radiation-hard optical links (GBT/Versatile links) are being developed for rates of 5 Gbps. 
+
+\item There are many other technological developments being pursued: new powering schemes (serial powering, DC-DC conversion), micro-channel cooling, new composite materials for lighter support structures, etc.
+
+\end{itemize}
+
+Concerning future detectors, their specific design will be mainly driven by the accelerator facility. Experiments for a large energy hh-collider will need to cope with very large radiation backgrounds and pile-up. In the case of ee-colliders, though radiation hardness is not an issue, very high precision detectors are required. Although the vast R\&D being performed for the HL-LHC will set the ground base for the next generation of detectors, it is worth highlighting that:
+
+\begin{itemize}
+
+\item There is work in progress in the development of new silicon sensors with intrinsic gain to improve the timing performance and radiation hardness ({\em e.g.} low gain avalanche detectors exploiting charge multiplication in high electric field regions). The aim in this case is having trackers with excellent position and time resolutions to boost pattern recognition, to improve vertex identification and missing transverse energy resolution. 
+
+\item New silicon-tungsten and crystal calorimeter prototypes are being investigated. DREAM (CERN RD52 project) aims at developing a detector to perform the simultaneous measurement of scintillation and Cherenkov light during the shower development.
+
+\item The design of the DAQ architecture mostly depends upon the necessity of a triggerless operation or not. While in a ee-collider the low duty cycles makes possible the complete readout of the detector by using large front-end (FE) buffers with commercial off-the-shelf components (FPGAs, GPUs, etc.) for offline processing, at hh-colliders it is required some local data processing at the FE level in custom-designed ASICs, with most probably the usage of a first-level track-trigger. 
+
+\item For data transmission, some commercial optical links offer today rates up to 25 Gbps, so in that sense they do not seem to be a future limiting factor assuming they qualify in terms of radiation hardness. First prototypes already exist for multi-gigabit wireless data transmission (60 GHz band) that could potentially be used for detector readout and trigger implementation (inside-out radial data transfer to ease track-finding algorithms in on-detector logic).
+
+\end{itemize}
 
