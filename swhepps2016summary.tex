@@ -5,7 +5,8 @@
 layout,amssymb,xspace,setspace,amsmath,printlen}
 \usepackage[compact]{titlesec}
 \usepackage{rotating}
-\usepackage[a4paper, right=2cm,left=2cm]{geometry}
+\usepackage[a4paper, right=2.0cm,left=2.0cm]{geometry}
+%\usepackage[a4paper]{geometry}
 \usepackage{siunitx}
 
 %\providecommand{\href}[2]{#2}   
@@ -17,7 +18,7 @@ layout,amssymb,xspace,setspace,amsmath,printlen}
 
 %%% setup format 
 \renewcommand{\topfraction}{0.9}	% max fraction of floats at top
-\renewcommand{\bottomfraction}{0.8}	% max fraction of floats at bottom
+\renewcommand{\bottomfraction}{0.9}	% max fraction of floats at bottom
 \renewcommand{\floatpagefraction}{0.7}	% require fuller float pages
 \renewcommand{\dblfloatpagefraction}{0.7}	% require fuller float pages
 
@@ -36,15 +37,15 @@ layout,amssymb,xspace,setspace,amsmath,printlen}
  \message{The paper  height is \the\paperheight} 
  \message{The paper  width  is \the\paperwidth} 
 
-\newlength{\foo}
-\setlength{\foo}{12pt}
-\uselengthunit{mm}
-\typeout  {\printlength{\foo}}
+%\newlength{\foo}
+%\setlength{\foo}{12pt}
+%\uselengthunit{mm}
+%\typeout  {\printlength{\foo}}
 
 %\typeout{The paper  width  is \printlength{\paperwidth}}
 
-\pdfpagewidth=\paperwidth
-\pdfpageheight=\paperheight
+%\pdfpagewidth=\paperwidth
+%\pdfpageheight=\paperheight
 
 \include{newcommands}
 %\pagestyle{headings
@@ -63,6 +64,8 @@ layout,amssymb,xspace,setspace,amsmath,printlen}
 %\includeonly{11Detectors}
 %\includeonly{12Summary} 
 %\includeonly{13ConcludingRemarks}
+
+\thispagestyle{empty}
 
 \begin{document}
 \addtocounter{page}{-1}
@@ -92,7 +95,9 @@ Seminarhotel Aegerisee, 7-9 June 2016 \\
    \includegraphics[width=0.1\textwidth]{figures/CHIPPlogo.png}
  \end{figure}
 
-\vspace{-0.4cm}
+\vspace{-0.6cm}
+{\textsc {Preliminary Version in development}}
+
 \today \\
 \end{center}
 %\end{document}
@@ -111,42 +116,42 @@ Seminarhotel Aegerisee, 7-9 June 2016 \\
 %
 %  Editors: Florencia Canelli, Michele Weber
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{2Higgs}
+\input{2Higgs}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  LHC Searches
 %
 %  Editors: Ben Kilminster, Tobias Golling
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{3LHCsearches}
+\input{3LHCsearches}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  DiscussionSession Searches
 %
 %  Editors: Ben Kilminster, Tobias Golling
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{4DiscussionSearches}
+\input{4DiscussionSearches}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  Flavour Physics
 %
 %  Editors: Olivier Schneider, Adrian Signer, Klaus Kirch
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{5Flavour}
+\input{5Flavour}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Low Energy Physics 
 %
 %  Editors: Olivier Schneider, Adrian Signer, Klaus Kirch
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{6LowEnergy}
+\input{6LowEnergy}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Standard Model Physics 
 %
 %  Editors: Florencia Canelli, Michele Weber 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{7StandardModel}
+\input{7StandardModel}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -154,43 +159,42 @@ Seminarhotel Aegerisee, 7-9 June 2016 \\
 %
 %  Editors: Gino Isidori, Ricardo Rattazzi,  Thomas Gehrmann
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{8Theory}
+\input{8Theory}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DiscussionSession: Connections 
 %
 %  Editors: Gino Isidori, Olivier Schneider 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{9DiscussionConnections} 
+\input{9DiscussionConnections} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % New Accelerators
 %
 %  Editors: Lenny Rivkin
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{10Accelerators}
+\input{10Accelerators}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % New Detectors
 %
 %  Editors: Roland Horisberger, Sergio Gonzalez Sevilla
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{11Detectors}
+\input{11Detectors}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DiscussionSession: New Accelerators and Facilties and Summary
 %
 %  Editors: Tatusya Nakada, Lenny Rivkin
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{12Summary} 
+\input{12Summary} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %   Outlook 
 %   Editor: Rainer Wallny
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{13Outlook}
-
+\input{13Outlook}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
